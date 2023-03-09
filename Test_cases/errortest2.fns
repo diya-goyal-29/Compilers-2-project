@@ -1,0 +1,8 @@
+$$ wrong date syntax
+execute: ()->()
+{
+    int a=5*6;
+    double x=a*2.5;
+    date d = 01_12_22;
+    display("%t\n" , d ) ;
+}

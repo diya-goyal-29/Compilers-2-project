@@ -1,0 +1,13 @@
+$$ loop example
+execute: ()->()
+{
+    int b;
+    b = 0; 
+    int a = 1 ;
+    loop(b < 10)
+    {
+        a = (a + b);
+        b = b+1 ;
+    }
+    display("%i\n" , a);
+}

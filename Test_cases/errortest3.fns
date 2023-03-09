@@ -1,0 +1,6 @@
+$$ missing semicolon 
+execute: ()->()
+{
+    int a=2;
+    display("%i\n" , 100)
+}

@@ -1,0 +1,15 @@
+
+$$ arithmetic expressions 
+execute: ()->()
+{
+    display("%i\n" , 100);
+    display("%i\n" , 10 + 20);
+    display("%i\n" , 20-10);
+    display("%i\n" , 1020);
+    display("%i\n" , 10*20);
+    display("%i\n" , 20/10);
+    display("%i\n" , 3- 39);
+    display("%i\n" , 5%3);
+    
+	
+}

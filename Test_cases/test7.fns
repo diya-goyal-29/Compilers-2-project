@@ -1,0 +1,27 @@
+$$factorial recursion
+
+fact: (int n)->(int op)
+{
+    if (n == 1)
+    {
+        fbreak;
+    }
+
+    op = op * (n - 1);
+
+    fact(n - 1)->(op);
+}
+
+execute: ()->()
+{
+    int x, ans;
+    ans = x;
+    fact(x)->(ans);
+
+    if (x == 0 | x == 1)
+    {
+        ans = 1;
+    }
+
+    display("%i is the factorial of %i", ans, x);
+}

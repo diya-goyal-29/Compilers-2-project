@@ -1,0 +1,12 @@
+compound_interest : (double principal, double rateY, double timeY, int n) -> (double amt) 
+{
+    rateY = rateY/100;
+    amt = principal*(1+rateY/n)^(n*timeY);
+}
+
+execute : () -> () 
+{
+    double amount;
+    compound_interest(10000.0, 2.5, 10.5, 2) -> (amount);
+    display("Amount = %d", amount);
+}

@@ -1,0 +1,15 @@
+
+CI: (int principal, int rate, int years, int n) -> (int amt)
+{
+    rate = rate / 100;
+    amt = principal*(1+rate/n)^(n*years);
+}
+
+execute: ()->()
+{
+    int total, p, r, time, num;
+
+    CI(p, r, time, num)->(total);
+
+    display("The total money to be paid is: %i", total);
+}

@@ -1,0 +1,36 @@
+$$Primitive data types lexing example
+execute: (int a, int b)->(double c)
+{
+    $$This is single line COMMENT
+    $/This a 
+    multiline 
+    comment /$ 
+
+
+    int a = 5;
+    date x = 01_12_2022;
+    double z = 6.74;
+    month w = 01_2022;
+    $$int f;
+    a = a+w;
+    a=a+2;
+    display("%i\n" , a);
+    display("%d\n" , b);
+    display("%t\n" , d);
+
+    if(a == 5)
+    {
+        
+    }
+    else {
+
+        break;
+    }
+    loop(a < 7)
+    {
+        c = a^b;
+    }
+    double h;
+    int e = g;
+    
+}

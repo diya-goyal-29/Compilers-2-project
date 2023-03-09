@@ -1,0 +1,17 @@
+
+$$Primitive data types lexing example
+execute: ()->()
+{
+    $$This is single line COMMENT
+    $/This a 
+    multiline 
+    comment /$ 
+
+
+    int a = 5 ;
+    double b = 6.74;
+    date d = 01_12_2022;
+    display("%i\n" , a);
+    display("%d\n" , b);
+    display("%t\n" , d ) ;
+}

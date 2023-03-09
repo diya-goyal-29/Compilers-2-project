@@ -1,0 +1,44 @@
+$$ Type checking 
+
+execute : () -> () 
+{
+    int a = 5;
+    date d = 01_11_2022;
+
+    $$ Error here (addition of int and date datatype is wrong)
+    int b = a + d;
+    display("b = %d", b);
+
+    double c = 6.7;
+
+    $$ No error here (multiplication of int and double is possible)
+    c = c * a;
+    
+    string s = "hello";
+    $$ Error here (increment of string is not possible)
+    s++;
+
+    $$ No error here (decrement of double and increment of int is possible)
+    c--;
+    ++a;
+
+    month m = 11_2022;
+
+    $$ Error here (comparision of int and month is wrong)
+    if(a > m)
+    {
+        display("Incompatible comparision");
+    }
+
+    loop (a & b)
+    {
+        $$ Error here (power of a string is not possible)
+        string s1 = s ^ a;
+    }
+
+    $$ No error here (multiplication, division, and addition of int and double is possible)
+    int e = ((3*6) + 0.5)/5;
+
+    double f = -c;
+    double g = -s;
+}

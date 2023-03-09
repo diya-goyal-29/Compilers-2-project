@@ -1,0 +1,20 @@
+$$ Multiple Declarations and un-declared variables
+
+execute : () -> ()
+{
+    int a1 = 10;
+    double b1 = 4.56;
+    string s1 = "string";
+    date d1 = 11_11_2011;
+    month m1 = 09_2022;
+
+    loop(a1--)
+    {
+        $$ Error here (Multiple declarations of b1)
+        double b1 = 0.5^2;
+    }
+
+    $$ Error here (Using undeclared variable)
+    e1 = c1++;
+
+}

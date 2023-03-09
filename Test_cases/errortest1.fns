@@ -1,0 +1,5 @@
+$$ wrong single line comment syntax
+execute: ()->()
+{
+    $ This is single line COMMENT
+}

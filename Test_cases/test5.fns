@@ -1,0 +1,18 @@
+power: (int a, int b )->(int result)                 $$ function definition
+{
+   result = a^b;                                     $$ Calculating power
+
+}
+
+
+execute: ()->() 
+{
+   int a,b,result;
+
+
+   accept("%i %i",a,b);                               $$ Input from user
+   power(a,b)->(result);                              $$ function call
+   display("%i to the power %i : %i",a,b,result );    $$ print statement  
+ 
+
+}

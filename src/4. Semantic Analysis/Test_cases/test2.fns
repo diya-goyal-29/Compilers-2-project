@@ -1,0 +1,15 @@
+SI : (int principal, int time, int rate) -> (int amount) 
+{
+    amount = principal * time * rate / 100;
+}
+
+execute: () -> ()
+{
+    int p = 10000;
+    int t = 2;
+    int r = 5;
+    int amt;
+
+    SI (p, t, r) -> (amt);
+    display("Amount : %d", amt);
+}

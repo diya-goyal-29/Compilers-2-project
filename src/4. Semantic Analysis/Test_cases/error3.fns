@@ -1,0 +1,12 @@
+$$ Reserved Keywords Usage
+
+simpleIntrst : (int a) -> (int b)
+{
+    accept("%d", a);
+}
+
+execute : () -> () 
+{
+    $$ Error here (using a keyword as variable name)
+    double SIPmaturity, compoundIntrst;
+}

@@ -1,0 +1,30 @@
+
+$$ missing parenthesis at line 12
+
+execute: ()->()
+{
+    int a;
+    int b;
+    a=2;
+    b=1;
+    int x = 5 ;
+    int y = 6 ;
+    if( (a > 0 ) & (b > 0)
+    {
+        display("both a and b are positve");
+        if(a > b)
+        {
+           display("a is greater than b");
+        }
+        else 
+        {
+            display("b is greater than a");
+        }
+    }
+    else 
+    {
+        display("both a and b are negative");
+    }
+
+
+}
